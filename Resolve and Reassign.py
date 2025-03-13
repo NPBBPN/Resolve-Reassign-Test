@@ -6,7 +6,7 @@ import argparse
 API_TOKEN = ""
 USER_EMAIL = ""
 USER_ID = ""
-REASSIGN_USER_ID = ""  # New user to reassign high-urgency incidents
+REASSIGN_USER_ID = ""  # User for High Urgency incidents to be reassigned to
 
 
 def make_request(url,method,data=None):
