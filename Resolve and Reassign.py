@@ -2,7 +2,7 @@ import requests
 import json
 import argparse
 
-# Default settings
+# Optionally set Default Global Variables
 API_TOKEN = ""
 USER_EMAIL = ""
 USER_ID = ""
