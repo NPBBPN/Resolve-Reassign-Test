@@ -18,4 +18,4 @@ jobs:
       - name: Create a change event
         uses: PagerDuty/pagerduty-change-events-action@v1.3.0
         with:
-          integration-key: ${{ secrets.PAGERDUTY_CHANGE_INTEGRATION_KEY }}
+          integration-key: ${{ secrets.PAGERDUTY_CHANGE_INTERGRATION_KEY }}
