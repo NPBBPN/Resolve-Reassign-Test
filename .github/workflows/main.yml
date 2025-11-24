@@ -1,0 +1,21 @@
+on:
+  push:
+    branches:
+      - master
+      - main
+  pull_request:
+    branches:
+      - master
+      - main
+    types:
+      - closed
+
+jobs:
+  send-pagerduty-change-event:
+    runs-on: ubuntu-latest
+    name: Sending PagerDuty Change Event
+    steps:
+      - name: Create a change event
+        uses: PagerDuty/pagerduty-change-events-action@master
+        with:
+          integration-key: ${{ secrets.PAGERDUTY_CHANGE_INTEGRATION_KEY }}
