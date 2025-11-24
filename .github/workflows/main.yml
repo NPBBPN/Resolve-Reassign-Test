@@ -1,2 +1,0 @@
-- name: PagerDuty Change Events
-  uses: PagerDuty/pagerduty-change-events-action@v1.3.0
